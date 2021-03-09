@@ -1,0 +1,105 @@
+.wireframe {
+  outline: 2px solid gray;
+}
+.wrapper {
+  margin: 0 auto;
+  height: 350px;
+  width: 100%;
+  background-color: #fff;
+  overflow: scroll;
+  white-space: nowrap;
+}
+.wrapper::before {
+  display: inline-block;
+  content: "";
+  height: 100%;
+  vertical-align: middle;
+}
+.book-card {
+  /* height: 200px; */
+  width: 200px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.book-card .img {
+  height: 200px;
+  width: 172px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.book-card .book-name {
+  white-space: break-spaces;
+}
+.b-c-yellow {
+  background-color: yellow;
+}
+.b-c-grey {
+  background-color: ghostwhite;
+}
+.btn-modify {
+  position: absolute;
+  bottom: 5px;
+}
+.p-rel {
+  position: relative;
+}
+.pb-35 {
+  padding-bottom: 35px;
+}
+.input-area {
+  height: 30px;
+}
+.input-area > .input-view {
+  content: " ";
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid gray;
+  margin-bottom: 0px;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+}
+.input-area .input-word {
+  display: inline-block;
+  line-height: 30px;
+  margin-bottom: 0px;
+  vertical-align: top;
+}
+.input-area .button-div {
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-bottom: 0px;
+  vertical-align: top;
+  height: 30px;
+  width: 30px;
+  margin-bottom: 0px;
+  line-height: 30px;
+}
+.input-area .button-div:hover {
+  background: inherit;
+}
+.input-area .button-div:active {
+  margin-top: 3px;
+  background-color: rgb(193, 233, 233);
+}
+
+@media (max-width: 576px) {
+  div.book-list-component {
+    width: 90%;
+    min-width: 320px;
+  }
+}
+@media (max-width: 400px) {
+  .wrapper {
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    white-space: break-spaces;
+  }
+  .book-card {
+    /* height: 300px; */
+    width: 225px;
+  }
+}
